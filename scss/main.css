@@ -34,23 +34,23 @@ a:hover {
 
 @-webkit-keyframes music {
   from {
-    -webkit-transform: rotate(5deg);
-            transform: rotate(5deg);
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
   }
   to {
-    -webkit-transform: rotate(-5deg);
-            transform: rotate(-5deg);
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
   }
 }
 
 @keyframes music {
   from {
-    -webkit-transform: rotate(5deg);
-            transform: rotate(5deg);
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
   }
   to {
-    -webkit-transform: rotate(-5deg);
-            transform: rotate(-5deg);
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
   }
 }
 
@@ -385,6 +385,7 @@ footer .wrapper .icons {
 
 footer .wrapper .icons .box {
   background: #111;
+  color: #fff;
   width: 40px;
   height: 40px;
   margin: 0 5px;

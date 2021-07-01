@@ -32,10 +32,10 @@ a:hover {
     }
     @keyframes music {
       from {
-        transform: rotate(5deg);
+        transform: rotate(2deg);
       }
       to {
-        transform: rotate(-5deg);
+        transform: rotate(-2deg);
       }
     }
     &:hover {
@@ -228,6 +228,7 @@ footer {
       display: flex;
       .box {
         background: $iconbg;
+        color: $text-color;
         width: 40px;
         height: 40px;
         margin: 0 5px;
