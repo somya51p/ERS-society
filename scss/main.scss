@@ -38,6 +38,9 @@ a:hover {
         transform: rotate(-5deg);
       }
     }
+    &:hover {
+      filter: drop-shadow(0 1.5rem 1rem rgba(255, 255, 255, 0.5));
+    }
   }
   & .navbar-nav {
     padding-left: 15rem;
@@ -61,6 +64,51 @@ a:hover {
 
   & .my_btn {
     @include mybtn;
+
+    &:hover {
+      @include hovereffects;
+    }
+  }
+}
+
+.header_hero {
+  width: 100%;
+  height: 80vh;
+  background: $text-color;
+
+  & .header_hero__text {
+    height: 60vh;
+    @include content_center(flex-start);
+
+    & h2 {
+      color: $main-color;
+      font-size: 4rem;
+      margin-bottom: 0.3rem;
+      line-height: 150%;
+      font-weight: 500;
+      & span {
+        color: $primary-color;
+        text-transform: capitalize;
+      }
+    }
+    & p {
+      font-size: 1rem;
+      color: $main-color;
+      margin-bottom: 0.5rem;
+    }
+    & .header_hero__btn {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+      & a {
+        @include mybtn;
+
+        &:hover {
+          @include hovereffects;
+        }
+      }
+    }
   }
 }
 
