@@ -127,158 +127,149 @@ a:hover {
     }
   }
 }
-
-.footer-distributed {
-  background: #666;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-  box-sizing: border-box;
+footer {
   width: 100%;
-  text-align: left;
-  font: bold 16px sans-serif;
-  padding: 55px 50px;
-  .footer-left {
-    display: inline-block;
-    vertical-align: top;
-    width: 40%;
-  }
-  .footer-center {
-    display: inline-block;
-    vertical-align: top;
-    width: 35%;
-    i {
-      background-color: #33383b;
-      color: #ffffff;
-      font-size: 25px;
-      width: 38px;
-      height: 38px;
-      border-radius: 50%;
-      text-align: center;
-      line-height: 42px;
-      margin: 10px 15px;
-      vertical-align: middle;
-    }
-    i.fa-envelope {
-      font-size: 17px;
-      line-height: 38px;
-    }
-    p {
-      display: inline-block;
-      color: #ffffff;
+  background: url("../images/footer-bg.jpg") no-repeat center/cover;
+  .container {
+    padding: 100px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    h2 {
+      color: $text-color;
+      margin-bottom: 22px;
       font-weight: 400;
-      vertical-align: middle;
-      margin: 0;
-      span {
-        display: block;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 2;
+      font-size: 21px;
+    }
+    .footerCard {
+      width: 100%;
+      max-width: 23%;
+      &.cardone {
+        display: flex;
+        flex-direction: column;
+        a {
+          text-decoration: none;
+          color: $bdc;
+          font-weight: 200;
+          margin-bottom: 10px;
+          transition: color 600ms;
+          &:hover {
+            color: $blue;
+          }
+        }
       }
-      a {
-        color: lightseagreen;
-        text-decoration: none;
+      &.cardtwo {
+        max-width: 50%;
+        p {
+          color: $bdc;
+          font-size: 15px;
+          font-weight: 300;
+        }
+        .email {
+          display: flex;
+          align-items: center;
+          padding: 20px 0;
+          input {
+            padding: 14px;
+            border: none;
+            outline: none;
+            border-radius: 50px;
+            width: 60%;
+            margin-right: 24px;
+          }
+          .btn {
+            border-radius: 50px;
+            background: $gradient;
+            border: none;
+            color: $text-color;
+            font-weight: 400;
+            &:hover {
+              background: $blue;
+            }
+            i {
+              margin-left: 5px;
+            }
+          }
+        }
+      }
+      &.cardthree {
+        .imgWrap {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          img {
+            margin-bottom: 8px;
+            cursor: pointer;
+          }
+        }
       }
     }
   }
-  .footer-right {
-    display: inline-block;
-    vertical-align: top;
-    width: 20%;
-  }
-  h3 {
-    color: #ffffff;
-    font: normal 36px "Open Sans", cursive;
-    margin: 0;
-    span {
-      color: lightseagreen;
-    }
-  }
-  .footer-links {
-    color: #ffffff;
-    margin: 20px 0 12px;
-    padding: 0;
-    a {
-      display: inline-block;
-      line-height: 1.8;
-      font-weight: 400;
-      text-decoration: none;
-      color: inherit;
-      &:before {
-        content: "|";
+  .wrapper {
+    color: $text-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 0;
+    .copyright {
+      p {
+        color: $bdc;
+        font-size: 15px;
         font-weight: 300;
-        font-size: 20px;
-        left: 0;
-        color: #fff;
-        display: inline-block;
-        padding-right: 5px;
+        i {
+          color: $blue;
+        }
+        a {
+          text-decoration: none;
+          color: $blue;
+        }
       }
     }
-    .link-1 {
-      &:before {
-        content: none;
+    .icons {
+      display: flex;
+      .box {
+        background: $iconbg;
+        width: 40px;
+        height: 40px;
+        margin: 0 5px;
+        display: flex;
+        cursor: pointer;
+        &:hover {
+          background: $gradient;
+        }
+        i {
+          margin: auto;
+        }
       }
-    }
-  }
-  .footer-company-name {
-    color: #222;
-    font-size: 14px;
-    font-weight: normal;
-    margin: 0;
-  }
-  .footer-company-about {
-    line-height: 20px;
-    color: #92999f;
-    font-size: 13px;
-    font-weight: normal;
-    margin: 0;
-    span {
-      display: block;
-      color: #ffffff;
-      font-size: 14px;
-      font-weight: bold;
-      margin-bottom: 20px;
-    }
-  }
-  .footer-icons {
-    margin-top: 25px;
-    a {
-      display: inline-block;
-      width: 35px;
-      height: 35px;
-      cursor: pointer;
-      background-color: #33383b;
-      border-radius: 2px;
-      font-size: 20px;
-      color: #ffffff;
-      text-align: center;
-      line-height: 35px;
-      margin-right: 3px;
-      margin-bottom: 5px;
     }
   }
 }
-@media (max-width: 880px) {
-  .footer-distributed {
-    font: bold 14px sans-serif;
-    .footer-left {
-      display: block;
-      width: 100%;
-      margin-bottom: 40px;
-      text-align: center;
-    }
-    .footer-center {
-      display: block;
-      width: 100%;
-      margin-bottom: 40px;
-      text-align: center;
-      i {
-        margin-left: 0;
+//responsive code
+@media (max-width: 768px) {
+  html {
+    font-size: 70%;
+  }
+  .main_header {
+    line-height: 5rem;
+    text-align: center;
+    padding: 0 2rem;
+    & .navbar-nav {
+      padding-left: 3rem;
+      & .nav-item .nav-link {
+        padding-right: 0%;
       }
     }
-    .footer-right {
-      display: block;
-      width: 100%;
-      margin-bottom: 40px;
-      text-align: center;
+    .navbar .navbar-toggler {
+      border-color: $text-color;
     }
+  }
+  .header_hero__text .header_hero__btn {
+    display: block;
+    margin: 0 auto;
+  }
+  .header_hero__text .header_hero__btn a {
+    display: block;
+  }
+  .header_hero__img {
+    display: none;
   }
 }
