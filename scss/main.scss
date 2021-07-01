@@ -127,6 +127,62 @@ a:hover {
     }
   }
 }
+.products {
+  width: 100%;
+  padding: 80px 0;
+  .title {
+    text-align: center;
+    h2 {
+      font-size: 34px;
+    }
+    p {
+      font-size: 14px;
+      color: $grey;
+      margin: 13px 0 0 0;
+    }
+  }
+  .container {
+    padding: 60px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    .card {
+      width: 100%;
+      max-width: 23%;
+      box-shadow: $boxshadow;
+      &:hover {
+        .cardInfo {
+          .btn {
+            background: $gradient;
+            color: $text-color;
+          }
+        }
+      }
+      .cardBg {
+        background: $text-color;
+        display: flex;
+        justify-content: center;
+        padding: 26px 0;
+        border-bottom: 1px solid $bdc;
+        cursor: pointer;
+      }
+      .cardInfo {
+        text-align: center;
+        padding: 18px;
+        background: $greybg;
+        p {
+          margin: 13px 0;
+          color: $grey;
+          line-height: 1.5;
+        }
+        .btn {
+          background: $text-color;
+          color: $bl;
+          transition: none;
+        }
+      }
+    }
+  }
+}
 footer {
   width: 100%;
   background: url("../images/footer-bg.jpg") no-repeat center/cover;
