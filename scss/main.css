@@ -133,7 +133,6 @@ a:hover {
 .header_hero .header_hero__text h2 {
   color: #0a183d;
   font-size: 4rem;
-  margin-bottom: 0.3rem;
   line-height: 150%;
   font-weight: 500;
 }
@@ -146,10 +145,9 @@ a:hover {
 .header_hero .header_hero__text p {
   font-size: 1rem;
   color: #0a183d;
-  margin-bottom: 0.5rem;
 }
 
-.header_hero .header_hero__text .header_hero__btn {
+.header_hero .header_hero__btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -165,7 +163,7 @@ a:hover {
           flex-direction: row;
 }
 
-.header_hero .header_hero__text .header_hero__btn a {
+.header_hero .header_hero__btn a {
   padding: 0.8rem 3.2rem;
   background: #b71540;
   line-height: 3rem;
@@ -183,13 +181,60 @@ a:hover {
   outline: none;
 }
 
-.header_hero .header_hero__text .header_hero__btn a:hover {
+.header_hero .header_hero__btn a:hover {
   background-color: #fff;
-  -webkit-box-shadow: 0rem 1.5rem 2rem rgba(255, 255, 157, 0.4);
-          box-shadow: 0rem 1.5rem 2rem rgba(255, 255, 157, 0.4);
+  -webkit-box-shadow: 0rem 1.5rem 2rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0rem 1.5rem 2rem rgba(0, 0, 0, 0.4);
   color: #0a183d;
   -webkit-transform: translateY(-0.7rem);
           transform: translateY(-0.7rem);
+}
+
+.header_hero .header_hero__img {
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-animation: anime_hero 10s linear infinite alternate;
+          animation: anime_hero 10s linear infinite alternate;
+}
+
+@-webkit-keyframes anime_hero {
+  from {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes anime_hero {
+  from {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.header_hero .header_hero__img img {
+  -webkit-filter: drop-shadow(0 1.5rem 1rem rgba(0, 0, 0, 0.8));
+          filter: drop-shadow(0 1.5rem 1rem rgba(0, 0, 0, 0.8));
+  height: 80%;
 }
 
 .footer-distributed {

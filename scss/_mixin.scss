@@ -4,6 +4,12 @@
   color: $main-color;
   transform: translateY(-0.7rem);
 }
+@mixin hovereffects2 {
+  background-color: $text-color;
+  box-shadow: 0rem 1.5rem 2rem rgba(0, 0, 0, 0.4);
+  color: $main-color;
+  transform: translateY(-0.7rem);
+}
 @mixin mybtn {
   padding: 0.8rem 3.2rem;
   background: $primary-color;
