@@ -312,11 +312,15 @@ a:hover {
 }
 
 .gallery {
-  height: 100vw;
+  height: 50vw;
 }
 
 .gallery .carousel .carousel-inner .carousel-item {
   height: 50rem;
+}
+
+.gallery .carousel .carousel-inner .carousel-item img {
+  height: 45rem;
 }
 
 .team {
@@ -417,6 +421,7 @@ a:hover {
           transform: translateY(30px);
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  display: inline;
 }
 
 .team .wrappernew .cardnew .infonew h2 {
@@ -425,10 +430,24 @@ a:hover {
   font-family: "Viaoda Libre", cursive;
 }
 
-.team .wrappernew .cardnew .infonew p {
-  letter-spacing: 1px;
-  font-size: 15px;
-  margin-top: 8px;
+.team .wrappernew .cardnew .infonew .box {
+  background: #111;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
+}
+
+.team .wrappernew .cardnew .infonew .box:hover {
+  background: #b71540;
+}
+
+.team .wrappernew .cardnew .infonew .box i {
+  margin: auto;
 }
 
 footer {

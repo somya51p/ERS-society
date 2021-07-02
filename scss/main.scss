@@ -185,9 +185,13 @@ a:hover {
   }
 }
 .gallery {
-  height: 100vw;
+  height: 50vw;
   & .carousel .carousel-inner .carousel-item {
     height: 50rem;
+
+    img {
+      height: 45rem;
+    }
   }
 }
 .team {
@@ -261,15 +265,26 @@ a:hover {
         opacity: 0;
         transform: translateY(30px);
         transition: 0.5s;
+        display: inline;
         h2 {
           margin: 0px;
           color: #fff;
           font-family: "Viaoda Libre", cursive;
         }
-        p {
-          letter-spacing: 1px;
-          font-size: 15px;
-          margin-top: 8px;
+        .box {
+          background: $iconbg;
+          color: $text-color;
+          width: 30px;
+          height: 30px;
+          margin: 0 5px;
+          display: inline-flex;
+          cursor: pointer;
+          &:hover {
+            background: $gradient;
+          }
+          i {
+            margin: auto;
+          }
         }
       }
     }
