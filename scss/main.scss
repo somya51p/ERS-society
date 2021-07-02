@@ -148,7 +148,7 @@ a:hover {
   }
 }
 .about {
-  height: 30vw;
+  height: 32vw;
   width: 100%;
   padding-top: 0.5rem;
   background-image: url("../images/bg2.jpg");
@@ -159,7 +159,7 @@ a:hover {
       font-size: 3rem;
     }
     & .about_hero__text {
-      height: 45vh;
+      height: 60vh;
       @include content_center(flex-start);
 
       & h4 {
@@ -229,7 +229,7 @@ a:hover {
       transform: skew(0deg, 13deg);
       font-size: 0px;
       margin: 30px 0px 0px 0px;
-      background: #c8c2c2;
+      background: $bdc;
       height: 250px;
       width: 200px;
     }
@@ -237,7 +237,7 @@ a:hover {
       box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
       padding: 120px 20px 20px 20px;
       border-radius: 20px;
-      background: #fff;
+      background: $text-color;
       margin: -120px 0px 0px 0px;
       line-height: 19px;
       font-size: 14px;
@@ -285,7 +285,7 @@ a:hover {
       height: 16rem;
       border-radius: 15px;
       padding: 1.5rem;
-      background: white;
+      background: $text-color;
       position: relative;
       display: flex;
       align-items: flex-end;
@@ -327,14 +327,14 @@ a:hover {
       .infonew {
         position: relative;
         z-index: 3;
-        color: white;
+        color: $text-color;
         opacity: 0;
         transform: translateY(30px);
         transition: 0.5s;
         display: inline;
         h3 {
           margin: 0px;
-          color: #fff;
+          color: $text-color;
           font-family: "Viaoda Libre", cursive;
         }
         p {
@@ -370,7 +370,7 @@ a:hover {
     height: 320px;
     margin: 80px 0;
     text-align: center;
-    border: 1px solid #ddd;
+    border: 1px solid $bdc;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     .icon-holder {
@@ -601,7 +601,7 @@ footer {
     height: 240vw;
   }
   .team {
-    height: 500vw;
+    height: 520vw;
   }
   .gallery {
     height: 120vw;
