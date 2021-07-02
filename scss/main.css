@@ -426,8 +426,8 @@ a:hover {
 }
 
 .team .wrappernew .cardnew {
-  width: 15rem;
-  height: 20rem;
+  width: 14rem;
+  height: 16rem;
   border-radius: 15px;
   padding: 1.5rem;
   background: white;
@@ -498,10 +498,15 @@ a:hover {
   display: inline;
 }
 
-.team .wrappernew .cardnew .infonew h2 {
+.team .wrappernew .cardnew .infonew h3 {
   margin: 0px;
   color: #fff;
   font-family: "Viaoda Libre", cursive;
+}
+
+.team .wrappernew .cardnew .infonew p {
+  margin: 0.3px;
+  color: #fff;
 }
 
 .team .wrappernew .cardnew .infonew .box {

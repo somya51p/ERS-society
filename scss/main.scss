@@ -255,8 +255,8 @@ a:hover {
     justify-content: space-around;
 
     .cardnew {
-      width: 15rem;
-      height: 20rem;
+      width: 14rem;
+      height: 16rem;
       border-radius: 15px;
       padding: 1.5rem;
       background: white;
@@ -306,10 +306,14 @@ a:hover {
         transform: translateY(30px);
         transition: 0.5s;
         display: inline;
-        h2 {
+        h3 {
           margin: 0px;
           color: #fff;
           font-family: "Viaoda Libre", cursive;
+        }
+        p {
+          margin: 0.3px;
+          color: $text-color;
         }
         .box {
           background: $iconbg;
