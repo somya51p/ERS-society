@@ -237,6 +237,80 @@ a:hover {
   height: 80%;
 }
 
+.about {
+  height: 30vw;
+  width: 100%;
+  padding-top: 0.5rem;
+  background-image: url("../images/bg2.jpg");
+}
+
+.about .title {
+  text-align: center;
+  color: #fff;
+}
+
+.about .title h2 {
+  font-size: 3rem;
+}
+
+.about .title .about_hero__text {
+  height: 25vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about .title .about_hero__text h4 {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.about .title .about_hero__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-animation: anime_hero 10s linear infinite alternate;
+          animation: anime_hero 10s linear infinite alternate;
+}
+
+@keyframes anime_hero {
+  from {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.about .title .about_hero__img img {
+  -webkit-filter: drop-shadow(0 1.5rem 1rem rgba(0, 0, 0, 0.8));
+          filter: drop-shadow(0 1.5rem 1rem rgba(0, 0, 0, 0.8));
+  height: 80%;
+}
+
 .products {
   height: 40vw;
   width: 100%;

@@ -127,6 +127,46 @@ a:hover {
     }
   }
 }
+.about {
+  height: 30vw;
+  width: 100%;
+  padding-top: 0.5rem;
+  background-image: url("../images/bg2.jpg");
+  .title {
+    text-align: center;
+    color: $text-color;
+    & h2 {
+      font-size: 3rem;
+    }
+    & .about_hero__text {
+      height: 25vh;
+      @include content_center(flex-start);
+
+      & h4 {
+        color: $text-color;
+        font-size: 1.25rem;
+        font-weight: 500;
+      }
+    }
+    & .about_hero__img {
+      @include content_center(flex-start);
+      animation: anime_hero 10s linear infinite alternate;
+
+      @keyframes anime_hero {
+        from {
+          transform: scale(0.8);
+        }
+        to {
+          transform: scale(1);
+        }
+      }
+      & img {
+        filter: drop-shadow(0 1.5rem 1rem rgba(0, 0, 0, 0.8));
+        height: 80%;
+      }
+    }
+  }
+}
 .products {
   height: 40vw;
   width: 100%;
