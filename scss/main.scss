@@ -139,7 +139,7 @@ a:hover {
       font-size: 3rem;
     }
     & .about_hero__text {
-      height: 25vh;
+      height: 45vh;
       @include content_center(flex-start);
 
       & h4 {
@@ -235,7 +235,7 @@ a:hover {
   }
 }
 .team {
-  height: 60vw;
+  height: 65vw;
   .title {
     text-align: center;
     margin-bottom: 3rem;
@@ -463,8 +463,14 @@ footer {
   .team {
     height: 500vw;
   }
+  .gallery {
+    height: 120vw;
+  }
   .products {
     height: 150vw;
+  }
+  .about {
+    height: 200vw;
   }
   .main_header {
     line-height: 5rem;

@@ -254,7 +254,7 @@ a:hover {
 }
 
 .about .title .about_hero__text {
-  height: 25vh;
+  height: 45vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -398,7 +398,7 @@ a:hover {
 }
 
 .team {
-  height: 60vw;
+  height: 65vw;
 }
 
 .team .title {
@@ -705,8 +705,14 @@ footer .wrapper .icons .box i {
   .team {
     height: 500vw;
   }
+  .gallery {
+    height: 120vw;
+  }
   .products {
     height: 150vw;
+  }
+  .about {
+    height: 200vw;
   }
   .main_header {
     line-height: 5rem;
