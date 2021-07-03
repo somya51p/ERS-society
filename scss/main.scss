@@ -148,7 +148,7 @@ a:hover {
   }
 }
 .about {
-  height: 32vw;
+  height: 40vw;
   width: 100%;
   padding-top: 0.5rem;
   background-image: url("../images/bg2.jpg");
@@ -159,7 +159,7 @@ a:hover {
       font-size: 3rem;
     }
     & .about_hero__text {
-      height: 60vh;
+      height: 70vh;
       @include content_center(flex-start);
 
       & h4 {
@@ -251,7 +251,7 @@ a:hover {
 }
 
 .gallery {
-  height: 50vw;
+  height: 100vw;
   & .carousel .carousel-inner .carousel-item {
     height: 50rem;
 
@@ -261,7 +261,7 @@ a:hover {
   }
 }
 .team {
-  height: 70vw;
+  height: 80vw;
   .title {
     text-align: center;
     margin-bottom: 3rem;
@@ -361,7 +361,7 @@ a:hover {
   }
 }
 .section-padded {
-  height: 30vw;
+  height: 50vw;
   background-image: url("../images/bg2.jpg");
   color: $text-color;
   margin-top: 2rem;
